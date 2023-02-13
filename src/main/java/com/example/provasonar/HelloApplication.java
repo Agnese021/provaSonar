@@ -8,6 +8,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class HelloApplication extends Application {
+    public static final int a = 3;
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
@@ -19,7 +20,7 @@ public class HelloApplication extends Application {
     }
 
     public static void main(String[] args) {
-        System.out.println("hello");
+        System.out.println("hello" + a);
         launch();
     }
 }
